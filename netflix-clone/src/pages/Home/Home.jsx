@@ -1,14 +1,16 @@
 import React from 'react'
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
-import Row from '../../Components/Rows/Row/Row';
+import Banner from '../../Components/Banner/Banner';
+import Rowlist from '../../Components/Rows/RowList/Rowlist';
 
 export default function Home() {
   return (
     <>
-      <Header/>
-      <Footer/>
-      <Row/>
+      <Header />
+      <Banner />
+      <Rowlist />
+      <Footer />
     </>
   );
 }
