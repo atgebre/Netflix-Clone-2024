@@ -16,7 +16,10 @@ function Row ({ title, fetchUrl, isLargeRow }) {
         // console.log(fetchUrl)
         const request = await axios.get(fetchUrl);
         // console.log(request)
-        setMovie(request.data.results);
+         setMovie(request.data.results);
+         
+        // setMovie(request.data.results [Math.floor(Math.random() * request.data.results.length)]);
+
       } catch (error) {
         console.log("error", error);
       }

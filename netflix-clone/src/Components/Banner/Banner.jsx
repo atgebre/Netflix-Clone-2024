@@ -9,7 +9,7 @@ function Banner() {
       (async () => {
         try {
           const request = await axios.get(requests.fetchNetflixOriginals);
-          console.log(request)
+          // console.log(request)
           setMovie(
             request.data.results[
               Math.floor(Math.random() * request.data.results.length)
@@ -33,6 +33,7 @@ function Banner() {
           backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          
         }}
       >
         <div className="banner__contents">
